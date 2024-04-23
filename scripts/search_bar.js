@@ -19,7 +19,7 @@ function searchwithLoader(){
     setTimeout(function() { //ejecutar la función de la búsqueda depués de 5 segundos
         search_exp();
         hideLoader();//ocultar carga después de la búsqueda
-    }, 2000); //5000 milisegundos equivale a 2 segundos
+    }, 2000); //2000 milisegundos equivale a 2 segundos
 }
 
 //muestra el spinner
