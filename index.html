@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title> TravellingArtisans </title>
+    <!-- meta data -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Silvia Lorero">
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="icon" type="image/png" href="./images/search.png">
+
+
+</head>
+
+<body>
+
+<header id="cover" style="padding: 12.5% 15%; background-image: url('/images/portada.png'); background-repeat: no-repeat; background-size: cover;">
+    <Img src="./images/cover_logo.png" alt="Travelling Artisans">
+    <h1> "Serendipia: una actitud para hacer descubrimientos por accidente" </h1>
+</header>
+
+<!--BARRA DE NAVEGACIÓN -->
+<nav>
+    <ul>
+        <li><a class = "logo" href="#cover"><Img src="./images/cover_logo.png" alt="Travelling Artisans"></a></li>
+        <li><a class = "text" href="index.html"> Home </a></li>
+        <li><a class = "text" href="ciudades.html"> Ciudades </a></li>
+        <li><a class = "text" href="#exp"> Acerca de </a></li>
+        </li>
+    </ul>
+</nav>
+<br>
+<br>
+
+<!--BARRA DE BÚSQUEDA-->
+<section id="search">
+    <h2>
+        Introduce tu destino ideal...
+    </h2>
+    <form>
+        <input id="search_bar" type="text" placeholder="Search..." >
+    </form>
+    <h3> “A journey of a thousand miles must begin with a single step.” </h3>
+    <br>
+    <p> – Lao Tzu </p>
+</section>
+
+
+<!--ELEMENTO DE CARGA-->
+<div id="loader" style="display:none;">
+    <div class="spinner"></div>
+    <p>Cargando...</p>
+</div>
+
+<h2 id="exp1"> Inserta el título de tu ciudad favorita ... </h2>
+
+
+
+<!--MINI SECCIONES DE LAS CIUDADES-->
+<div id = "loc_list">
+    <div class="row">
+        <h2> Islas Feroe </h2>
+        <div class = "loc">
+            <div class="column" id = "exp_faroe_light">
+                <Img src="./images/exp/feroe-lighthouse.jpg" alt="Faroe Lighthouse">
+                <h3>El Faro de Kallurin, Kalsoy</h3>
+                <p>La larga y delgada isla de Kalsoy está ubicada en la parte norte del archipiélago de las Islas Feroe y es famosa por el faro de Kallurin, situado en lo que parece ser el borde de la tierra, encaramado en lo alto de acantilados dramáticos que caen directamente al Atlántico Norte. Las vistas desde el faro son de las más increíbles de la isla; acantilados verticales te rodean casi por todos lados, mientras que en la distancia puedes ver el borde de las islas del norte y del sur. </p>
+            </div>
+
+            <div class="column" id = "exp_faroe_res">
+                <Img src="./images/exp/feroe-koks.jpg" alt="Faroe Koks">
+                <h3>Koks, Restaurante de Estrella Michelín</h3>
+                <p>No es frecuente que una experiencia gastronómica de alta cocina comience con un paseo en Land Rover alrededor del borde de un lago y hasta una pintoresca cabaña feroesa, pero KOKS no es una experiencia gastronómica de alta cocina habitual. Dirigido por el joven chef Poul Andrias Ziska, el restaurante KOKS es el primer restaurante con estrella Michelin de las Islas Feroe, ubicado en el corazón de la naturaleza en un valle escondido pintoresco.</p>
+            </div>
+
+            <div class="column" id = "exp_faroe_water">
+                <Img src="./images/exp/feroe-waterfall.jpg" alt = "Gásadalur-Múlafossur">
+                <h3>Gásadalur-Múlafossur</h3>
+                <p>Aislado y solo conectado al resto de las Islas por carretera en 2004, Gásadalur alberga la impresionante cascada Múlafossur. Cayendo directamente del océano, cuenta con una vista impresionante y una parada esencial en tu itinerario de las Islas Feroe. Luego, disfruta de la cena en el Café Fjorooy, que sirve el salmón ahumado más fresco que jamás hayas comido mientras admiras el pueblo.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <h2> Kastelorizo, Grecia </h2>
+        <div class = "loc">
+            <div class="column" id="exp_kast_cave">
+                <Img src="./images/exp/kast-grotto.jpg" alt = "Blue Cave">
+                <h3>Cueva Azul</h3>
+                <p>Kastellorizo es una isla de un archipiélago, asi que coge un barco y explora los alrededores, y la primera parada es la Cueva Azul. El lugar es conocido en todo el mundo por su magnífico color azul claro del agua y su rica colección de estalactitas. Nada o hacer snorkel en la cueva te ofrecerá una experiencia inolvidable. </p>
+            </div>
+
+            <div class="column" id="exp_kast_port">
+                <Img src="./images/exp/kast-port.jpg" alt = "Kastelorizo, port city">
+                <h3>Kastelorizo, puerto </h3>
+                <p>Con su pinturesco puerto, la ciudad de Kastelorizo es el único pueblo en la isla. Conocida por sus mansiones neoclásicas de dos o tres pisos con balcones de madera, la ciudad está construida de forma anfiteatro e incluye calles estrechas y callejones, fachadas coloridas.</p>
+            </div>
+
+            <div class="column" id="exp_kast_isle">
+                <Img src="./images/exp/kast-islet.jpg" alt = "Kastelorizo, Greece">
+                <h3>St George of the Island</h3>
+                <p>Justo al lado del puerto de Mandraki, está el pequeño islote de San Jorge con la pequeña capilla de San Jorge y la gran bahía con aguas turquesas. Es un lugar ideal para nadar y hacer snorkel. También hay un bar de aperitivos, por si tienes hambre. Para llegar allí, se necesita contratar un servicio diario de taxi acuático desde el puerto. </p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="row">
+        <h2> Sankt Moritz, Suecia </h2>
+        <div class = "loc">
+            <div class="column" id="exp_sankt_village">
+                <Img src="./images/exp/stmort-village.jpg" alt="Sankt Moritz">
+                <h3>Sankt Moritz, pueblo</h3>
+                <p>St. Moritz es más que un exclusivo resort vacacional. También fue el lugar de nacimiento del turismo de invierno alpino en 1864 y ha sido sede de los Juegos Olímpicos de Invierno en dos ocasiones. Cuenta con 350 kilómetros de pistas con una infraestructura de vanguardia en la zona circundante.</p>
+            </div>
+
+            <div class="column" id="exp_sankt_ski">
+                <Img src="./images/exp/stmort-horses.jpg" alt="Sankt Moritz">
+                <h3>White turf, ski-kjöring</h3>
+                <p>Skikjöring, la única carrera de su tipo en el mundo. Las carreras de Skikjöring de Credit Cuisse, donde los esquiadores son arrastrados a lo largo de una pista de 2.700 metros sin montura a velocidades de hasta 50 km/h son exclusivas de White Turf y siempre causan sensación entre la multitud.</p>
+            </div>
+
+            <div class="column" id="exp_sankt_train">
+                <Img src="./images/exp/stmort-train.jpg" alt="Sankt Moritz">
+                <h3>Ferrocaril Rhaetian </h3>
+                <p>Un viaje en el Ferrocarril Rético es la combinación perfecta de viaje y un evento en sí mismo. Disfruta de un aperitivo al compás de un acompañamiento de piano en vivo, o de una comida gourmet con vistas siempre cambiantes, o un juego de cartas con una cerveza.</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<!-- FOOTER -->
+<footer>
+    <ul id ="exp">
+        <li><a class = "logo" href="#cover"><Img src="./images/cover_logo.png" alt="TravellingArtisans"></a></li>
+        <li><a href="https://es-es.facebook.com//" target="_blank"><img src="images/facebook.png" style="width:50px; height:50px;"></a></li>
+        <li><a href="https://www.instagram.com/?hl=es" target="_blank"><img src="images/instagram.png" style="width:50px; height:50px;"></a></li>
+        <li><a href="https://www.twitter.com/" target="_blank"><img src="images/twitter.png" style="width:50px; height:50px;"></a></li>
+        <li style="float:right"><a href="#"> FAQs </a></li>
+        <li style="float:right"><a href="condiciones.html"> Terms & <br>Conditions</a></li>
+    </ul>
+</footer>
+
+
+<!-- SCRIPTS DE JS-->
+<script src="./scripts/search_bar.js"></script>
+
+
+</body>
+
+</html>

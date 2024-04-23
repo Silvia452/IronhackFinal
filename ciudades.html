@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title> TravellingArtisans </title>
+    <!-- meta data -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Silvia Lorero">
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="icon" type="image/png" href="./images/search.png">
+
+
+</head>
+
+<body>
+
+<header id="cover">
+    <Img src="./images/cover_logo.png" alt="Travelling Artisans">
+    <h1> "Serendipia: una actitud para hacer descubrimientos por accidente" </h1>
+</header>
+
+<!--BARRA DE NAVEGACIÓN -->
+<nav>
+    <ul>
+        <li><a class = "logo" href="#cover"><Img src="./images/cover_logo.png" alt="Travelling Artisans"></a></li>
+        <li><a class = "text" href="index.html"> Home </a></li>
+        <li><a class = "text" href="ciudades.html"> Ciudades </a></li>
+        <li><a class = "text" href="#exp"> Acerca de </a></li>
+        </li>
+    </ul>
+</nav>
+
+
+<!--OTRAS CIUDADES DE INTERÉS-->
+<section>
+    <h3>OTRAS CIUDADES DE INTERÉS:</h3>
+
+<div class="ciudad">
+    <!--MAZURY-->
+    <h3>MAZURY</h3>
+    <div id="ciudad">
+        <p>Los lagos de Masuria constituyen un entorno muy popular para los polacos que practican la vela o el piragüismo en ellos, o en los numerosos ríos y canales que comunican unos con otros. Pero no todo es agua. Esta región, alejada de las grandes ciudades y de sus núcleos industriales, constituye un remanso de naturaleza y tranquilidad</p>
+        <img src="./images/exp/mazury-kayak.jpg" alt="kayak">
+        <img src="./images/exp/mazury-port.jpg" alt="puerto">
+    </div>
+
+    <!--ROMA-->
+    <h3>ROMA</h3>
+    <div id="ciudad">
+        <p>Roma, la capital de Italia, es una extensa ciudad cosmopolita que tiene a la vista casi 3,000 años de arte, arquitectura y cultura de influencia mundial. Las ruinas antiguas como las del Foro y el Coliseo evocan el poder del antiguo Imperio Romano. La ciudad del Vaticano, sede central de la Iglesia católica romana, cuenta con la Basílica de San Pedro y los Museos del Vaticano.</p>
+        <p>Puedes comprar las entradas para el Vaticano a partir del siguiente  <a href="https://www.museivaticani.va/content/museivaticani/es.html">  enlace</a></p>
+        <img src="./images/exp/roma.jpeg" alt="roma">
+        <img src="./images/exp/coliseo.jpeg" alt="coliseo">
+    </div>
+</div>
+    <h3>¡Si quieres saber que tipo de viajero eres, únicamente haz clic en el botón!</h3>
+    <button onclick="redireccion()" id="formulario">Ir al formulario</button>
+</section>
+
+
+<!--FOOTER-->
+<footer>
+    <ul id ="exp">
+        <li><a class = "logo" href="#cover"><Img src="./images/cover_logo.png" alt="TravellingArtisans"></a></li>
+        <li><a href="https://es-es.facebook.com//" target="_blank"><img src="images/facebook.png" style="width:50px; height:50px;"></a></li>
+        <li><a href="https://www.instagram.com/?hl=es" target="_blank"><img src="images/instagram.png" style="width:50px; height:50px;"></a></li>
+        <li><a href="https://www.twitter.com/" target="_blank"><img src="images/twitter.png" style="width:50px; height:50px;"></a></li>
+        <li style="float:right"><a href="#"> FAQs </a></li>
+        <li style="float:right"><a href="condiciones.html"> Terms & <br>Conditions</a></li>
+    </ul>
+</footer>
+
+
+<!-- SCRIPTS DE JS-->
+<script src="./scripts/search_bar.js"></script>
+
+
+</body>
+</html>

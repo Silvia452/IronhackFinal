@@ -1,0 +1,422 @@
+/*CSS DE TODAS LAS PÁGINAS WEB*/
+
+* { /*se aplica a todos los elementos del HTML*/
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Garamond, serif;
+    text-align: center;
+    display: block;
+    background-color: #282A35;
+    font-size: 125%;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+
+/*NAVIGATION*/
+nav {
+    position: sticky;
+    top: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+nav ul li {
+    float: left;
+    border-left: 1px solid lightslategray;
+    font-size: medium;
+}
+
+
+a {
+    display: inline-block;
+}
+
+li a.logo{
+    padding: 0px 14px;
+}
+
+li a.logo img{
+    height: 53px;
+    width: auto;
+}
+
+li a.text {
+    color: white;
+    text-align: center;
+    padding: 18px 16px;
+    text-decoration: none;
+}
+
+
+li a:hover{
+    background-color: black;
+}
+
+nav button a:hover{
+    background-color: black;
+}
+
+
+/*WEB PRINCIPAL*/
+
+
+header h1 {
+    margin: 0% 10% 0% 30%;
+    padding: 0px 10px;
+    font-size: 150%;
+    font-style: italic;
+    opacity: 0.7;
+    color:white;
+}
+
+section {
+    margin: 5% 10%;
+    padding: 20px;
+}
+
+#search{
+    border: 2px solid #59677a;
+}
+
+
+h2 {
+    display: block;
+    color: whitesmoke;
+    padding: 20px;
+    font-weight: normal;
+}
+
+#search_bar {
+    width: 80%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-image: url('/images/search.png');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+}
+
+/*PARTE DEL SPINNER*/
+.spinner{
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    border:4px solid #ccc;
+    border-top-color: #333;
+    animation: spin 1s ease-in-out infinite; /* la animación spin gira durante 1s y se repite continuamente*/
+    margin:0 auto;
+}
+
+@keyframes spin{
+    0%{
+        transform: rotate(0deg); /*rota 0 grados al inicio*/
+    }
+
+    100%{
+        transform: rotate(360deg); /*rota 360 al final de la animación*/
+    }
+
+}
+
+h3{
+    padding: 15px;
+    font-style: italic;
+    color: gray;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 15px;
+}
+
+
+
+/*PARA LA PARTE DE CADA UNA DE LAS CIUDADES*/
+#loc_list .row{
+    background-color: #111;
+    margin: 5% 10%;
+    padding: 20px;
+}
+
+#loc_list .row h2, #exp_collection h2 {
+    border: 1px solid #59677a;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column h3 {
+    color: lavenderblush;
+    font-weight: normal;
+}
+
+.column p {
+    color: gray;
+}
+.column {
+    width: 20%;
+}
+
+
+
+/*FOOTER*/
+footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+footer ul li {
+    float: left;
+    padding: 14px 16px;
+}
+
+
+footer ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+footer a:hover{
+    background-color: grey;
+
+
+}
+
+
+/*PÁGINA DE MASURIA Y ROMA*/
+.ciudad{
+    background-color: lightgrey;
+    padding: 20px;
+}
+#ciudad{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+#ciudad img{
+    width: 50%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+#ciudad p{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 15px;
+    color: grey;
+}
+
+#ciudad > p > a{
+    color:deepskyblue;
+
+}
+
+#ciudad > p > a:hover{
+    color:darkblue;
+
+}
+
+#formulario{
+    background-color: cadetblue;
+    color: white;
+    padding:14px 30px;
+    margin:8px 0;
+    border-radius: 6px;
+    cursor:pointer;
+    width:20%;
+    font-size: 16px;
+}
+
+#formulario:hover{
+    background-color: lightblue;
+
+
+}
+
+/*PÁGINA DE TÉRMINOS Y CONDICIONES*/
+
+.container{
+    background-color: lightgrey;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+
+
+/*FORMULARIO*/
+.formulario{
+    background-color: lightskyblue;
+    border-radius: 5px;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    max-width: 400px;
+    margin:0 auto;
+}
+
+label{
+    margin-bottom: 10px;
+    display: block;
+
+}
+
+select,input[type="text"], input[type="number"], input[type="email"]{
+    width:80%;
+    padding:10px;
+    margin-bottom: 10px;
+    border: 2px solid cornflowerblue;
+    border-radius: 6px;
+    box-sizing: border-box;
+
+}
+
+input[type="submit"]{
+    background-color: cadetblue;
+    color: white;
+    padding:14px 30px;
+    margin:8px 0;
+    border-radius: 6px;
+    cursor:pointer;
+    width:80%;
+    font-size: 16px;
+
+}
+
+input[type="submit"]:hover{
+    background-color: deepskyblue;
+
+}
+
+section > h2{ /*tipo de letra para el título*/
+    font-family: "Garamond";
+}
+
+
+
+/*TIPO RESPONSIVE*/
+@media only screen and (max-width:800px) {
+    /* Para tablets: */
+    body {
+        width: 100%;
+    }
+
+    nav ul li {
+        font-size: medium;
+    }
+
+    a {
+        text-transform: uppercase;
+        display: block;
+        padding: 10px 10px 10px 20px;
+    }
+
+    footer{
+        display: block;
+        width: 100%;
+    }
+
+
+    #ciudad img{
+        width: 70%;
+        margin-bottom: 0;
+        margin-right: 10px;
+    }
+
+    .formulario{
+        max-width: 300px;
+        padding: 10px;
+    }
+
+    label{
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+
+    select,
+    input[type="text"],
+    input[type="number"],
+    input[type="email"]{
+        width: 80%;
+        font-size: 14px;
+        padding:8px; /*reducir el relleno de los campos de entrada*/
+        margin-bottom: 8px; /*reducir el margen inferior de los campos de entrada*/
+    }
+
+    input[type="submit"], #formulario{
+        width: 80%;
+        font-size: 14px;
+        padding:12px 25px; /*reducir el relleno del botón*/
+        margin-bottom: 10px;
+    }
+
+    #enviar{
+        position: relative;
+    }
+
+}
+
+@media only screen and (max-width:500px) {
+    /* Para teléfono móvil */
+    body {
+        width: 100%;
+        font-size: 100%;
+    }
+    header h1{
+        font-size:75%;
+        margin-right: 0%;
+    }
+    li a.logo{
+        display: none;
+    }
+
+    a {
+        text-transform: uppercase;
+        display: block;
+        padding: 10px 10px 10px 20px;
+    }
+
+    #ciudad img{
+        width: 90%;
+        margin-bottom: 0;
+        margin-right: 10px;
+    }
+
+}
+
+
+.column {
+    width: 100%;
+}
+
+footer{
+    display: block;
+    padding: 10px 10px 10px 20px;
+    width: 100%;
+
+}
