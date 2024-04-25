@@ -67,5 +67,5 @@ function redireccion(){
 
 //SCRIPT PARA EL BOTÓN DE ENVIAR
 function enviarFormulario(){
-    alert('¡Resultado enviado al correo!')
+    alert('¡Gracias por realizar el formulario!');
 }
